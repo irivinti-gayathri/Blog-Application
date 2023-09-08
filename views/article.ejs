@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/nav') %>
+  <div class="container">
+    <h1 class="article-title"><%= post.title %></h1>
+    <h4 class="article-date"><%= post.time %></h4>
+    <h5 class="author"> by <%= post.creator %></h5>
+    <p class="article-image"><img src="https://unsplash.com/blog/content/images/2022/12/Group-250.jpg" alt="Your Image Description" width="400" height="200"></p>
+
+
+    <div class="article-content-wrapper">
+      <p class="article-content"><%= post.content %></p>
+    </div>
+  </div>
+</body>
+</html>
