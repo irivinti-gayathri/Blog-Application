@@ -5,7 +5,7 @@ const mongoose=require('mongoose');
 // init app
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/blog', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/local', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const {port, engine} = require('./config'); //Es6 Destructuring
